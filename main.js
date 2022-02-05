@@ -86,7 +86,7 @@ const showcase = document.getElementById("showcase");   // the place to show big
 
 var current_album = [];
 var photo_index = 0;
-var album_end = current_album.length-1;
+var album_end = 11;
 var all_photo_node = document.getElementsByClassName("photo");
 
 for(let i=1; i<=12; i++){
