@@ -11,8 +11,9 @@ class PreviewNode{
         a.appendChild(img);
         this.node.appendChild(a);
         this.node.onclick = function(){
-            Selected_Changed(all_photo_node[imgID%12-1]);
-            photo_index = imgID%12-1; // auto trans string to number due to my id's setting (p{number})
+            let index = (imgID%12===0? 11:imgID%12-1);
+            Selected_Changed(all_photo_node[index]);
+            photo_index = index; // auto trans string to number due to my id's setting (p{number})
             showcase.src = current_album[photo_index];
         }
     }
