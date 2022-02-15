@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daily Words</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="styles.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="./transition.css"/>
   <link rel="stylesheet" href="icomoon/style.css">
   <link rel="shortcut icon" href="imgs/icon.ico">
   <link rel="icon" href="imgs/icon.ico" sizes="144x144">
@@ -15,18 +17,18 @@
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
+  <div class="w3-row w3-padding w3-black bg-black">
     <div class="w3-col l3 m3 s6">
-      <a href="#HOME" class="w3-button w3-block w3-black w3-round">HOME</a>
+      <a href="#HOME" class="my-button w3-block w3-black w3-round bg-black">HOME</a>
     </div>
     <div class="w3-col l3 m3 s6">
-      <a href="#PREVIEW" class="w3-button w3-block w3-black w3-round">PRIVIEW</a>
+      <a href="#PREVIEW" class="my-button w3-block w3-black w3-round bg-black">PRIVIEW</a>
     </div>
     <div class="w3-col l3 m3 s6">
-      <a href="#SHOWCASE" class="w3-button w3-block w3-black w3-round">SHOWCASE</a>
+      <a href="#SHOWCASE" class="my-button w3-block w3-black w3-round bg-black">SHOWCASE</a>
     </div>
     <div class="w3-col l3 m3 s6">
-      <a href="#FOOTER" class="w3-button w3-block w3-black w3-round">CONTACT</a>
+      <a href="#FOOTER" class="my-button w3-block w3-black w3-round bg-black">CONTACT</a>
     </div>
   </div>
 </div>
@@ -46,8 +48,8 @@
 
 
 <!-- Add a background color and large text to the whole page -->
-<div class="w3-sand2 w3-large">
-<div class="w3-dark-gray w3-content" style="max-width:85%">
+<div class="w3-sand2 w3-large bg-dark">
+<div class="w3-dark-gray w3-content bg-light" style="max-width:85%">
 
 <div class="w3-padding-16 " ></div>
 
@@ -65,7 +67,7 @@
 <!--SECTION END-->
 <div class="w3-padding-16" ></div> 
 <div class="w3-bar w3-center" id="BAR"></div>
-<div class="w3-padding-32 w3-sand2" ></div> 
+<div class="w3-padding-32 w3-sand2 bg-dark" ></div> 
 <div class="w3-padding-16 " ></div>
 
 
@@ -81,10 +83,10 @@
                 <p></p>
         </div>
         <div class="w3-col l6 m6 s6" style="padding: 5px;" onclick="left(event);">
-            <button class="w3-block w3-button w3-sand2 w3-round">Previous</button>
+            <button class="w3-block my-button w3-sand2 w3-round bg-dark">Previous</button>
         </div>
         <div class="w3-col l6 m6 s6" style="padding: 5px;" onclick="right(event);">
-            <button class="w3-block w3-button w3-sand2 w3-round">Next</button>
+            <button class="w3-block my-button w3-sand2 w3-round bg-dark">Next</button>
         </div>
     </div>
 </section>
@@ -99,18 +101,19 @@
 
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-48 w3-large" id="FOOTER">
+<footer class="w3-center w3-black w3-padding-48 w3-large bg-black" id="FOOTER">
   <p>Chian Chen, 2022</p>
   <p>hsiao020729528@gmail.com</p>
   <div class="bar">
     <a href="https://www.facebook.com/profile.php?id=100000590406884" TARGET="_BLANK"><span
-                class="icon-facebook w3-black w3-button w3-round"></span></a>
+                class="icon-facebook my-button w3-round"></span></a>
     <a href="https://www.instagram.com/calligraphy_ailurophile" TARGET="_BLANK">
-      <span class="icon-instagram w3-black w3-button w3-round"></span></a>
-    <a href="https://twitter.com/chi_an_chen"><span class="icon-twitter w3-black w3-button w3-round" TARGET="_BLANK"></span></a>
+      <span class="icon-instagram my-button w3-round"></span></a>
+    <a href="https://twitter.com/chi_an_chen"><span class="icon-twitter my-button w3-round" TARGET="_BLANK"></span></a>
   </div>
   
 </footer>
-<script src="main.js"></script>
+<script src="./main.js"></script>
+<script src="/Scroll.js"></script>
 </body>
 </html>

@@ -35,7 +35,7 @@ const bar = document.getElementById("BAR");
 class AlbumNode{
     constructor(id){
         this.node = document.createElement('button');
-        this.node.classList += id===1? "w3-button w3-gray w3-circle" : "w3-button w3-sand2 w3-circle";
+        this.node.classList += id===1? "my-button w3-gray w3-circle bg-dark" : "my-button w3-sand2 w3-circle bg-dark";
         this.node.innerText = id;
         this.node.onclick = function(){
             preview.textContent='';
