@@ -65,7 +65,7 @@ span {
 .photo:hover {
     filter: saturate(1) opacity(0.5);
     padding: 10px;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .display {
@@ -108,7 +108,7 @@ span {
     background-color: #b0bec5 !important;
     color: #676c70 !important;
     filter: opacity(0.8);
-    cursor: grab;
+    cursor: pointer;
 }
 
 
