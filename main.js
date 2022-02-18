@@ -1,3 +1,5 @@
+import scroll from './Scroll.js';
+
 class PreviewNode{
     constructor(imgID){
         this.node = document.createElement("div");
@@ -42,9 +44,12 @@ class AlbumNode{
             let first = 1+12*(id-1);
             let end = first + (id===7? 6:12);
             current_album = [];
+            // Selected_Changed(all_photo_node[0]);
             for(let i=first; i < end; i++){
                 let node = new PreviewNode(i);
                 preview.appendChild(node.P_Node);
+                // let index = i%12===0? 11:i%12-1;
+                // all_photo_node[index].src = './imgs/'+i+'.JPG';
                 current_album.push('./imgs/'+i+'.JPG');
             }
             album_end = current_album.length-1;
@@ -53,6 +58,7 @@ class AlbumNode{
             removeSelected();
             this.classList.remove('w3-sand2')
             this.className += ' w3-gray';
+            scroll();
             };
     }
     get A_Node(){
@@ -129,3 +135,6 @@ function Selected_Changed(Add_Selected){
     all_photo_node[photo_index].classList.remove("selected");
     Add_Selected.className += " selected";
 }
+
+window.right = right;
+window.left = left;
